@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;1,500&display=swap');
+
+:root {
+     --color-body:#e8c39e ;
+     --color-heading:#ffd9b3  ;
+     --color-base1: #62a998;
+     --color-base2: #8a9cc3;
+     --color-brand: #f5d8da;
+     --color-brand2:#ffbba8;
+     --color-width:#dac9df;
+     --color-words:  #2a302e;
+     --sidbar:#ffbba8;
+     --font-base: "montserrat";
+}
+
+* { 
+    font-family: montserrat;
+}
+
+body {
+  background: #f1fbff;
+}
+
+.section-padding {
+    padding: 100px 0;
+}
+
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+}
+
+.carousel-caption{
+    bottom: 220px;
+    z-index: 2;
+}
+
+.carousel-caption h5{
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+
+.carousel-caption p{
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+
+}
+
+.carousel-inner::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.navbar-nav a {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.navbar-light .navbar-brand{
+    color: black;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700px;
+    letter-spacing: 2px;
+}
+
+.navbar-light .navbar-brand:focus,
+.navbar-light  .navbar-brand:hover{
+    color: black;
+}
+
+.navbar-light .navbar-nav .navbar-link{
+    color: black;
+}
+
+.w-100{
+    height: 100vh;
+}
+
+.services .card-body i{
+    font-size: 50px;
+}
+
+.team .card-body i{
+    font-size: 20px;
+}
+
+.portafolio .card{
+    box-shadow: 15px 15px 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.team .card{
+    box-shadow: 15px 15px 15px 40px rgba(0, 0, 0, 0.15);
+
+}
+
+.contact-form {
+    max-width: 600px; 
+    margin: 0 auto; 
+}
+
+.contact-form .form-label {
+    display: block;
+}
+.contact-form .form-control {
+    width: 100%; 
+    max-width: 400px; 
+    margin: 0 auto; 
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .carousel-caption{
+        bottom: 370px;
+    }
+    .carousel-caption p{
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .navbar-nav{
+        text-align: center;
+    }
+    .carousel-caption{
+        bottom: 125px;
+    }
+    .carousel-caption a{
+        padding: 10px 15px;
+    }
+    .carousel-caption h5{
+        font-size: 17px;
+    }
+    .carousel-caption p{
+        width: 100%;
+        line-height: 1.6;
+        font-size: 12px;
+    }
+
+    .about-text{
+        padding-top: 50px;
+    }
+
+    .card{
+        margin-bottom: 30px;
+    }
+}
